@@ -59,34 +59,35 @@ export default function BlogSidebarPage({ data, }) {
   const portableTextComponents = {
     block: {
       normal: ({ children }) => (
-        <p className="mb-4 text-lg font-medium leading-relaxed text-gray-500 dark:text-gray-400 sm:text-xl lg:text-lg xl:text-xl">
+        <p 
+        className="mb-4 text-lg font-medium leading-relaxed  text-gray-600 dark:text-gray-400 sm:text-xl lg:text-lg xl:text-xl">
     {children}
   </p>
       ),
       h1: ({ children }) => (
-        <h1 className="mb-4 text-3xl font-bold leading-tight text-black transition-colors duration-300 hover:text-blue-600  dark:text-white dark:hover:text-blue-400 sm:text-4xl sm:leading-tight">
-          {children}
+        <h1
+        className="mb-4 font-extrabold text-black transition-colors duration-300 hover:text-blue-600 dark:text-white dark:hover:text-blue-400 text-4xl sm:text-3xl lg:text-5xl leading-tight sm:leading-snug lg:leading-[1.2]">          {children}
         </h1>
       ),
-  
+      
       h2: ({ children }) => (
-        <h2 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
+        <h2 className="mb-4 font-bold text-black dark:text-white text-3xl sm:text-2xl lg:text-4xl">
           {children}
         </h2>
       ),
+      
       h3: ({ children }) => (
-        <h3 className="mb-4 text-2xl font-semibold leading-tight text-gray-800 dark:text-gray-200 sm:text-3xl lg:text-2xl xl:text-3xl">
+        <h3 className="mb-4 font-bold text-gray-800 dark:text-gray-200 text-2xl sm:text-xl lg:text-3xl">
           {children}
         </h3>
       ),
-    
-      // Heading 4
+      
       h4: ({ children }) => (
-        <h4 className="mb-4 text-xl font-semibold leading-tight text-gray-700 dark:text-gray-300 sm:text-2xl lg:text-xl xl:text-2xl">
+        <h4 className="mb-4 font-semibold text-gray-700 dark:text-gray-300 text-xl sm:text-lg lg:text-2xl">
           {children}
         </h4>
       ),
-    
+      
       // Heading 5
       h5: ({ children }) => (
         <h5 className="mb-4 text-lg font-semibold leading-tight text-gray-600 dark:text-gray-400 sm:text-xl lg:text-lg xl:text-xl">
@@ -247,17 +248,22 @@ export default function BlogSidebarPage({ data, }) {
   
     list: {
       bullet: ({ children }) => (
-        <ul className="mb-10 list-inside list-disc text-body-color">
+        <ul className="mb-10 list-inside  custom-bullet-list">
           {children}
         </ul>
       ),
+  
+    
       number: ({ children }) => (
-        <ol className="list-inside list-decimal">{children}</ol>
+        <ol className="mb-10 list-inside text-body-color custom-number-list">
+        {children}
+      </ol>
       ),
     },
     listItem: {
       bullet: ({ children }) => (
-        <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
+        <li
+        className="mb-4 text-lg font-medium leading-relaxed  text-gray-600 dark:text-gray-400 sm:text-xl lg:text-lg xl:text-xl">
           {children}
         </li>
       ),
@@ -265,7 +271,7 @@ export default function BlogSidebarPage({ data, }) {
     },
     marks: {
       strong: ({ children }) => (
-        <strong className="text-primary dark:text-white">{children}</strong>
+        <strong className="text-black dark:text-white">{children}</strong>
       ),
       em: ({ children }) => <em>{children}</em>,
     },
@@ -508,7 +514,8 @@ export default function BlogSidebarPage({ data, }) {
           <div className="lg:m-4  flex flex-wrap">
         <div className=" lg:-mx-5 w-full overflow-hidden rounded">
           <div className="lg:m-4 ">
-        <h1 className="mb-4 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
+        <h1 
+        className="mb-4 font-extrabold text-black transition-colors duration-300 hover:text-blue-600 dark:text-white dark:hover:text-blue-400 text-4xl sm:text-3xl lg:text-5xl">
                 {data.title}
                 </h1>
         <div className="card4  rounded-xl">
