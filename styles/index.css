@@ -188,6 +188,6 @@
 }
 
 .custom-number-list > li:hover::before {
-  transform: scale(1.3); /* Scale the number on hover */
+  transform: scale(1.3); 
 color: #2563eb;
 }
